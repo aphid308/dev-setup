@@ -44,15 +44,15 @@ cd ~/.vim/bundle/YouCompleteMe
 
 ## How to enable Django introspection/YCM completion in Vim with Virtualenv
 
-`mkvirtualenv <your django virtualenv>
-pip install django
-django-admin startproject <project>
-cd $VIRTUAL_ENV/bin
-vim postactivate`
+`mkvirtualenv <your django virtualenv>  
+pip install django  
+django-admin startproject <project>  
+cd $VIRTUAL_ENV/bin  
+vim postactivate`  
 Add:
-`export DJANGO_SETTINGS_MODULE <project>.settings`
-`deactivate`
-`workon <your django virtualenv>`
-Test
-`echo $DJANGO_SETTINGS_MODULE`
+`export DJANGO_SETTINGS_MODULE <project>.settings`  
+`deactivate`  
+`workon <your django virtualenv>`  
+Test  
+`echo $DJANGO_SETTINGS_MODULE`  
 
